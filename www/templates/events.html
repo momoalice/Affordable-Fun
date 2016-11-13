@@ -1,0 +1,20 @@
+<ion-view view-title="Discount Events">
+	<ion-content scroll="true" style="padding: 5px;">
+		<div>
+			<table class="table-striped table-bordered">
+				<tr>
+					<th style="width: 45%;"><center><h6>Name (click for food nearby)</h6></center></th>
+					<th style="width: 40%;"><center><h6>Date</h6></center></th>
+					<th><center><h6>Sum Cost</h6></center></th>
+				</tr>
+				<tr ng-repeat="event in events">
+					<td ng-click="next(event, lat, lng)">{{event.eventName}}</td>
+					<td>{{event.eventDateString}}</td>
+					<td>{{event.cost}}</td>
+				</tr>
+			</table>
+		</div>
+
+	</ion-content>
+
+</ion-view>

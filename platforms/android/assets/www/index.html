@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+    <title></title>
+    
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">   
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css"> -->
+    
+    <!-- TODO: do we need jquery? is it coming from anywhere else? I think it is exclusively being used for attaching event handlers to the video player. -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <script src="cordova.js"></script>
+    <script src="js/ng-cordova.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
+    
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/DirectoryEntry.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/DirectoryReader.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/Entry.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/File.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/FileEntry.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/FileError.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/FileReader.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/FileSystem.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/fileSystemPaths.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/fileSystems-roots.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/fileSystems.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/FileWriter.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/Flags.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/LocalFileSystem.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/Metadata.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/ProgressEvent.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/requestFileSystem.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js"></script>
+    
+    <script type="text/javascript" src="plugins/cordova-plugin-file-transfer/www/FileTransfer.js"></script>
+    <script type="text/javascript" src="plugins/cordova-plugin-file-transfer/www/FileTransferError.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY-gxgQGKVWwO4-HBhXmHzk6oN3T7IE1g">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="lib/OAuth.js"></script>
+    <script src="lib/SHA1.js"></script>
+    
+    <script src="js/app.js"></script>
+
+    <script src="js/controllers/FoodCtrl.js"></script>
+    <script src="js/controllers/SearchCtrl.js"></script>
+    <script src="js/controllers/EventsCtrl.js"></script>
+    <script src="js/controllers/CheckoutCtrl.js"></script>
+    
+</head>
+<body ng-app="app" class="platform-android platform-cordova platform-webview">
+    
+    <ion-nav-bar class="bar-positive" style="background-color: rgba(17, 193, 243, 0.52);">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    <ion-nav-view></ion-nav-view>        
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "www.initialview.interviews"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "www.initialview.interviews"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "www.initialview.interviews"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "www.initialview.interviews"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "www.initialview.interviews"
+        }
+    },
+    "dependent_plugins": {}
+}

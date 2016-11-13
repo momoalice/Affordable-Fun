@@ -1,0 +1,22 @@
+<ion-view view-title="Food">
+    <ion-content scroll="true">
+    <div>
+			<table class="table-striped table-bordered">
+				<tr>
+					<th><h6>Restaurant</h6></th>
+					<th><h6>Category</h6></th>
+					<th><h6>Rating</h6></th>
+					<th><h6>Price</h6></th>
+				</tr>
+				<tr ng-repeat="food in restaurants">
+					<td>{{food.name}}</td>
+					<td>{{event.categories[0]}}</td>
+					<td>{{event.rating}}</td>
+					<td>{{event.price}}</td>
+				</tr>
+			</table>
+		</div>
+
+    </ion-content>
+
+</ion-view>

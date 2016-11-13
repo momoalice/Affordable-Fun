@@ -1,0 +1,27 @@
+<ion-view view-title="Food Near the Event">
+	<ion-content scroll="true" style="padding: 5px;">
+		<div>
+			<table class="table-striped table-bordered">
+				<tr>
+					<th><h6>Restaurant (click to plan trip!)</h6></th>
+					<th><h6>Category</h6></th>
+					<th><h6>Rating</h6></th>
+					<th><h6>Price</h6></th>
+				</tr>
+				<tr ng-repeat="food in restaurants">
+					<td ng-click="clicked(food, lat, lng)">{{food.name}}</td>
+					<td>{{food.categories[0][0]}}</td>
+					<td>{{food.rating}}</td>
+					<td>{{food.deals.options.price}}</td>
+				</tr>
+			</table>
+			</div>
+
+			<center>
+				<button>
+					
+				</button>
+			</center>
+	</ion-content>
+
+</ion-view>
